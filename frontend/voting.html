@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elections Wakanda</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/voting.js"></script>
+
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="register-header">VOTING</h1>
+    
+    <div id="register-error-msg-holder">
+      <p id="register-error-msg"></p>
+    </div>
+    
+    <form id="register-form">
+
+      <label for="candidates">Choose your candidate:</label>
+      <select name="candidates" id="candidates">
+      <input type="text" name="wknd-token" id="wknd-field" class="register-form-field" placeholder="Number of WKNDs">
+      <input type="button" value="Vote" id="voting-button" class="buttons">
+
+      <input type="text" name="transfer-address" id="transfer-address-field" class="register-form-field" placeholder="Transfer to ETH address">
+      <input type="button" value="Transfer WKND" id="transfer-button" class="buttons">
+      
+      <input type="button" value="Show Leads" id="winners-button" class="buttons">
+      <input type="button" value="getWKND" id="getwknd-button" class="buttons">
+    </form>
+
+    <div id="winning-candidates">
+      
+    </div>
+    
+  </main>
+</body>
+
+</html>

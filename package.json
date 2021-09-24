@@ -1,0 +1,36 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run treset && npm run copy && nodemon server.js",
+    "build": "node server.js",
+    "tinit": "truffle init",
+    "tcompile": "truffle compile",
+    "tmigrate": "truffle migrate",
+    "tdevelop": "truffle develop",
+    "treset": "truffle migrate --reset",
+    "gcli": "ganache-cli",
+    "copy": "cp ./build/Elections.json ./frontend/contract/Elections.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "*",
+    "ganache-cli": "^6.12.2",
+    "nodemon": "^2.0.12",
+    "shortid": "^2.2.16",
+    "socket.io": "^4.2.0",
+    "solc": "^0.4.26",
+    "truffle": "^5.4.10",
+    "truffle-contract": "^4.0.31",
+    "web3": "^1.5.2"
+  }
+}
